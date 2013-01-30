@@ -33,7 +33,7 @@ public:
 		return result;
 	}
 	
-    vector<int> inorderTraversal(TreeNode *root) {
+    	vector<int> inorderTraversal(TreeNode *root) {
         // Start typing your C/C++ solution below
         // DO NOT write int main() function
         stack<TreeNode*> my_stack;
@@ -69,10 +69,10 @@ public:
    */
 	vector<int> postorderTraversal(TreeNode* root) {
     	vector<int> result;
-		stack<TreeNode*> parent_stack;
-		stack<TreeNode*> child_stack;
+	stack<TreeNode*> parent_stack;
+	stack<TreeNode*> child_stack;
 
-		if (root)
+	if (root)
         {
     		child_stack.push(root);
     		
@@ -94,13 +94,13 @@ public:
     			parent_stack.pop();
     		}
         }
-		return result;
+	return result;
 	}
 
 	/*
 	while visiting nodes of level l, keep all nodes at l+1 level in the queue.
 	*/
-    vector<int> levelOrder(TreeNode *root) {
+    	vector<int> levelOrder(TreeNode *root) {
         // Start typing your C/C++ solution below
         // DO NOT write int main() function
         vector<int> result;
@@ -124,5 +124,5 @@ public:
         
         return result;
         
-    }
+    	}
 };
